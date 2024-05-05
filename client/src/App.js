@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./components/AppRouter";
+import AppRouter from "./components/appRouter";
 import { store } from "./store";
 import { Provider } from "react-redux"
 

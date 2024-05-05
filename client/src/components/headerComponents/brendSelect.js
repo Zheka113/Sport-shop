@@ -16,7 +16,7 @@ export default function BrendSelect() {
 
   return (
     <Box>
-      <FormControl size="small" sx={{ width: 120 }} inherit>
+      <FormControl size="small" sx={{ width: 120 }}>
         <InputLabel sx={{ color: 'inherit' }}>Brend</InputLabel>
         <Select
           sx={{ color: 'inherit' }}

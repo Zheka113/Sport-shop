@@ -1,9 +1,10 @@
 import React from "react";
+import AdminField from "../components/admin";
 
 const Admin = () => {
     return(
         <div>
-            Admin
+            <AdminField />
         </div>
     )
 }

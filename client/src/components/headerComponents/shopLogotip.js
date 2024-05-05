@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { Link } from "react-router-dom";
+import { SHOP_ROUTE } from "../../utils/consts";
 
 export const ShopLogotip = () => {
     return (
@@ -10,7 +11,7 @@ export const ShopLogotip = () => {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
         >
-            <Link href="/" underline="none" color="inherit">
+            <Link to={SHOP_ROUTE} style={{ textDecoration: 'none', color: 'inherit' }}>
                 SPORT SHOP
             </Link>
         </Typography>

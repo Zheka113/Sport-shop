@@ -1,9 +1,9 @@
-import Admin from "./pages/Admin";
-import Auth from "./pages/Auth";
-import Basket from "./pages/Basket";
-import ItemPage from "./pages/ItemPage";
-import Shop from "./pages/Shop";
-import { ADMIN_ROUTE, BASKET_ROUTE, ITEM_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "./utils/consts";
+import Admin from "./pages/admin";
+import {ModalWindow} from "./pages/auth";
+import Basket from "./pages/basket";
+import ItemPage from "./pages/itemPage";
+import Shop from "./pages/shop";
+import { ADMIN_ROUTE, BASKET_ROUTE, ITEM_ROUTE, AUTH_ROUTE, SHOP_ROUTE } from "./utils/consts";
 
 export const adminRoutes = [
     {
@@ -21,12 +21,8 @@ export const authRoutes = [
 
 export const guestRoutes = [
     {
-        path: REGISTRATION_ROUTE,
-        Component: <Auth/>
-    },
-    {
-        path: LOGIN_ROUTE,
-        Component: <Auth/>
+        path: AUTH_ROUTE,
+        Component: <ModalWindow/>
     },
     {
         path: SHOP_ROUTE,

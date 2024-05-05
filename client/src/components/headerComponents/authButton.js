@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import { useSelector, useDispatch } from "react-redux";
 import { authorization } from '../../store/toolkitSlice';
 import { Link } from 'react-router-dom';
+import { AUTH_ROUTE, SHOP_ROUTE } from '../../utils/consts';
 
 export default function AuthButton() {
 
@@ -14,7 +15,7 @@ export default function AuthButton() {
     <div>
       <Box>
         {isAuth ?
-        <Link to="/">
+        <Link to={SHOP_ROUTE}>
           <Button
             sx={{ m: 1 }}
             variant="outlined"
@@ -24,7 +25,7 @@ export default function AuthButton() {
           </Button>
         </Link>
           :
-          <Link to="/auth">
+          <Link to={AUTH_ROUTE}>
             <Button
               sx={{ m: 1 }}
               variant="outlined"

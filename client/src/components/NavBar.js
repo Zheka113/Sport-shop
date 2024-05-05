@@ -45,7 +45,7 @@ ListItemLink.propTypes = {
   to: PropTypes.string.isRequired,
 };
 
-export default function Categories() {
+export default function NavBar() {
   const [close, setClose] = React.useState(true);
 
   const handleClick = () => {
@@ -53,11 +53,12 @@ export default function Categories() {
   };
 
   return (
-      <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
         <Box
           sx={{
             bgcolor: blue[700],
             mt: 1,
+            borderRadius: '10px'
           }}
         >
           <List>
